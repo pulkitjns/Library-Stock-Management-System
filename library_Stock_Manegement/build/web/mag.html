@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LIBRARY STOCK MANAGEMENT</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<style>
+header {
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding:5px;	 
+}
+section {
+    width:900px;
+    float:left;
+    padding:10px;	 	 
+}
+nav {
+    line-height:60px;
+    background-color:#eeeeee;
+    height:400px;
+    width:300px;
+    float:left;
+    padding:2px;	      
+}
+
+footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:5px;	 	 
+}
+
+
+</style>
+</head>
+<body>
+
+<header>
+<h1>STOCK MANAGEMENT</h1>
+</header>
+
+<nav>
+<b>
+<h2>SELECT</h2><br>
+<ul>
+     <li class="active"><a href="Filter.html">HOME</a>
+    <li><a href="magentry.html">ADD MAGAZINE/NEWSPAPER</a></li>
+</ul>
+
+</nav>
+
+<section>
+<h1>SEARCH FOR MAGAZINE/NEWSPAPER</h1>
+<img src="mag.jpg" alt="workshop logo" align="ceneter" width=900 height=300 >
+<table style="width:100%">
+    <form action="Searchmag">
+<br>
+
+    <br>
+  TITLE: <input type="text" name="title">
+    <br>
+   <br>
+    
+ DATE: <input type="date" name="edition">
+<br>
+    <br>
+     LANGUAGE:
+  <select name="language">
+      <option>SELECT</option>
+    <option value="ENGLISH">ENGLISH</option>
+    <option value="HINDI">HINDI</option>
+     <option value="BENGALI">BENGALI</option>
+  </select>
+  <br><br>
+    CATEGORY: <input type="text" name="category">
+    <BR><br>
+
+      SELECT IN/OUT STOCK:
+   <br>
+      <label><input type="radio" name="status" value="instock">IN STOCK</label>
+    <br>
+    
+      <label><input type="radio" name="status" value="outofstock">OUT OF STOCK</label>
+    <br>
+ 
+<br>
+    <input type="submit" value="search"/>
+    </form>
+<footer>
+LIBRARY STOCK MANAGEMENT
+</footer>
+
+</body>
+</html>

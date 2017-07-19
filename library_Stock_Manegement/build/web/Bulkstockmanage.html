@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<style>
+header {
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding:5px;	 
+}
+section {
+    width:900px;
+    float:left;
+    padding:10px;	 	 
+}
+nav {
+    line-height:60px;
+    background-color:#eeeeee;
+    height:400px;
+    width:200px;
+    float:left;
+    padding:5px;	      
+}
+
+footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:5px;	 	 
+}
+
+
+</style>
+</head>
+<body>
+
+<header>
+<h1>STOCK MANAGEMENT</h1>
+</header>
+<nav>
+<b>
+<h2>FILTER STOCK ITEM</h2><br>
+<ul>
+    <li><a href="Filter.html">HOME</a></li>
+ <li><a href="Singlestockmanage.html">SINGLE BOOKS</a></li>
+<li><a href="Bulkstockmanage.html">BOOKS IN BULK</a></li>
+</ul>
+</nav>
+
+<section>
+<h1>BULK STOCK ENTRY</h1>
+<img src="images.jpg" alt="workshop logo" align="ceneter" width=800 height=300 >
+<table style="width:100%"><BR>
+    <form method="post" action="Bulkitem">
+    <br><br>
+    ITEM ID:  <input type="number" name="itemid" value="100">
+  <br><br>
+  TITLE: <input type="text" name="title" />
+
+    <br>
+     <br>
+  AUTHOR: <input type="text" name="author">
+
+    <br>
+     <br>
+    
+ EDITION: <input type="month" name="edition">
+
+    <br>
+    
+ <br>
+COUNTS:  <input type="number" name="itemcount" value="0">
+  <br><br>
+    
+  CATEGORY: <input type="text" name="category">
+ <br>
+    <br>
+     LANGUAGE:
+  <select name="language">
+    <option value="ENGLISH">ENGLISH</option>
+    <option value="HINDI">HINDI</option>
+    <option value="GERMAN">GERMAN</option>
+    <option value="FRENCH">JAPANESE</option>
+     <option value="BENGALI">BENGALI</option>
+  </select>
+     <br> <br>
+  DESCRIPTION:
+  <input type="text" name="description"><br> <br>
+SELECT STATUS:<br>
+    
+      <input type="radio" name="status" value="instock">IN STOCK<br>
+   
+     <input type="radio" name="status" value="outofstock">OUT OF STOCK
+    
+
+    <br><br>
+    <button>ADD</button><tab>
+    <button ><a href="Display.jsp">CANCEL</a></button>
+</form>
+<footer>
+BULK STOCK ENTRY
+</footer>
+
+</body>
+</html>
+
